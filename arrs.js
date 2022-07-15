@@ -89,6 +89,44 @@ console.log(perfom['name'])
 //Nested Objects can access 
 const perfomanceclass={name:'Mitchelle', age:'22', hobby:'dance',
 marks:{french:90, german:89}}
-console.log(perfomanceclass.marks.french)
+console.log(perfomanceclass.marks.french.age)
 
 //java script methods and this keyword
+
+
+
+let nums = [1,2,3,4,5]
+let double =nums.map(item=>item*item)
+console.log(double);
+console.log(nums);
+
+let even=nums.filter(item=> item%2==0);
+console.log(even);
+
+//classes
+class Students {
+    constructor(name, age , nationality){
+        this.name=name
+        this.age= age
+        this.nationality=nationality
+
+    }
+}
+let firststudent=new Students('misho','20','Kenyan')
+Students.prototype.gender ='female'
+let secondstdent= new Students('Winnie',23 ,'Ugandan')
+console.log(firststudent.name);
+console.log(secondstdent.gender);
+
+function People(name , age , nationality){
+    this .name=name
+    this .age=age
+    this .nationality=nationality
+
+}
+let  thirdpeople= new People('anne',19, 'Nigerian');
+console.log(thirdpeople);
+People.prototype.nationality ='Kenyan'
+let fourthpeople = new People('Annie',23 ,'Ugandan')
+console.log(fourthPeople.nationality);
+
